@@ -1,0 +1,151 @@
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding: 140px 0 80px;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .focus-cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+    max-height: calc(100vh - 70px);
+  }
+
+  nav.active {
+    transform: translateY(0);
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav li {
+    margin: 0 0 20px 0;
+  }
+
+  .hero-buttons,
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .focus-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .header-container {
+    padding: 15px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero,
+  .focus-areas-preview,
+  .cta-section {
+    padding: 80px 0;
+  }
+
+  .focus-card {
+    padding: 30px 20px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  header,
+  .hero-buttons,
+  .cta-section,
+  footer,
+  .social-links {
+    display: none;
+  }
+
+  .hero {
+    padding: 50px 0;
+    margin-top: 0;
+    background: none;
+    color: black;
+  }
+
+  .hero h1 {
+    color: black;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+}
