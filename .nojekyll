@@ -1,0 +1,7 @@
+# Create the file
+touch .nojekyll
+
+# Or create it manually:
+# - Create new file
+# - Name it ".nojekyll" (with the dot)
+# - No content needed
