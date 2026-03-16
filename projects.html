@@ -1,421 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Projects - AI For Lives</title>
-    <meta name="description" content="Explore AIforLives' projects including Erasmus+ collaborations and AI initiatives in media, health, and environment.">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/projects.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - AIforLives</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <header>
-        <div class="container header-container">
-            <a href="index.html" class="logo">
-                <i class="fas fa-brain logo-icon"></i>
-                AIforLives
-            </a>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="focus.html">Focus Areas</a></li>
-                    <li><a href="projects.html" class="active">Projects</a></li>
-                    <li><a href="contact.html">Get Involved</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container header-container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-brain logo-icon"></i>
+          AIforLives
+        </a>
+
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Toggle menu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="focus.html">Focus Areas</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Get Involved</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Page Hero -->
     <section class="page-hero projects-hero">
-        <div class="container">
-            <h1>Our Projects</h1>
-            <p class="hero-subtitle">Innovative AI solutions tailored to real-world challenges and Erasmus+ collaborations</p>
-        </div>
+      <div class="container">
+        <h1>Projects & Erasmus+</h1>
+        <p class="page-subtitle">
+          AIforLives develops and participates in national and international
+          projects that combine education, innovation, and social impact.
+        </p>
+      </div>
     </section>
 
-    <!-- Projects Filter -->
-    <section class="projects-filter">
-        <div class="container">
-            <div class="filter-container">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="erasmus">Erasmus+</button>
-                <button class="filter-btn" data-filter="media">Media</button>
-                <button class="filter-btn" data-filter="health">Health</button>
-                <button class="filter-btn" data-filter="environment">Environment</button>
-                <button class="filter-btn" data-filter="featured">Featured</button>
-            </div>
+    <!-- Erasmus+ Section -->
+    <section class="erasmus-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-icon">
+            <i class="fas fa-globe-europe"></i>
+          </div>
+          <h2>Erasmus+ Projects</h2>
         </div>
+        <p class="section-description">
+          A key part of our work involves Erasmus+ projects, where we
+          collaborate with partners across Europe and beyond. Through Erasmus+
+          programs, we provide non‑formal education and training, support youth
+          exchanges and capacity‑building activities, promote intercultural
+          dialogue and collaboration, and equip young people with AI, digital,
+          and entrepreneurial skills.
+        </p>
+      </div>
     </section>
 
-    <!-- Featured Projects -->
-    <section class="featured-projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>Featured Projects</h2>
-                <p>Highlighting our most impactful initiatives at the intersection of AI and social good</p>
+    <!-- Projects Grid -->
+    <section class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Our Projects</h2>
+
+        <div class="projects-grid">
+          <!-- Compath Sport -->
+          <div class="project-card" data-project="compath">
+            <div class="project-card-image">
+              <img
+                src="images/compath.png"
+                alt="Compath Sport Project"
+                onerror="this.style.display='none'; this.parentElement.classList.add('no-image');"
+              />
             </div>
-            
-            <div class="featured-grid">
-                <!-- EcoRelief Project -->
-                <div class="featured-project" data-category="environment featured">
-                    <div class="project-image">
-                        <div class="project-badge">Featured</div>
-                        <div class="image-placeholder">
-                            <i class="fas fa-leaf"></i>
-                            <p>EcoRelief Platform</p>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-category">
-                            <span class="category-tag environment">Environment</span>
-                            <span class="category-tag erasmus">Erasmus+</span>
-                        </div>
-                        <h3>EcoRelief Platform</h3>
-                        <p class="project-description">An AI-powered disaster response and environmental monitoring system that helps communities prepare for and respond to environmental crises. The platform uses machine learning to analyze satellite imagery and social media data for real-time crisis assessment.</p>
-                        
-                        <div class="project-details">
-                            <div class="detail">
-                                <i class="fas fa-calendar"></i>
-                                <span>2023 - Present</span>
-                            </div>
-                            <div class="detail">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Germany, Greece, Italy</span>
-                            </div>
-                            <div class="detail">
-                                <i class="fas fa-users"></i>
-                                <span>5 Partner Organizations</span>
-                            </div>
-                        </div>
-                        
-                        <div class="project-cta">
-                            <a href="#ecorelief-details" class="btn btn-brown view-details" data-project="ecorelief">View Details</a>
-                            <a href="contact.html" class="btn btn-secondary">Get Involved</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Digital Survey Platform -->
-                <div class="featured-project" data-category="media featured">
-                    <div class="project-image">
-                        <div class="project-badge">Featured</div>
-                        <div class="image-placeholder">
-                            <i class="fas fa-chart-bar"></i>
-                            <p>Digital Survey Platform</p>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-category">
-                            <span class="category-tag media">Media</span>
-                            <span class="category-tag erasmus">Erasmus+</span>
-                        </div>
-                        <h3>Digital Survey & Analysis Platform</h3>
-                        <p class="project-description">An intelligent survey platform that uses natural language processing to analyze responses and identify trends. Designed for social research organizations and NGOs to better understand community needs and measure social impact.</p>
-                        
-                        <div class="project-details">
-                            <div class="detail">
-                                <i class="fas fa-calendar"></i>
-                                <span>2022 - 2024</span>
-                            </div>
-                            <div class="detail">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Across Europe</span>
-                            </div>
-                            <div class="detail">
-                                <i class="fas fa-users"></i>
-                                <span>Youth Organizations</span>
-                            </div>
-                        </div>
-                        
-                        <div class="project-cta">
-                            <a href="#digitalsurvey-details" class="btn btn-teal view-details" data-project="digitalsurvey">View Details</a>
-                            <a href="contact.html" class="btn btn-secondary">Get Involved</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="project-card-content">
+              <div class="project-header">
+                <span class="project-tag">Erasmus+ Sport</span>
+                <h3>Compath Sport</h3>
+              </div>
+              <p>
+                Advancing education, professional growth, and personal
+                development of young athletes-students through AI and sports
+                innovation.
+              </p>
+              <div class="project-tags">
+                <span class="tag">AI in Sport</span>
+                <span class="tag">Youth</span>
+                <span class="tag">400K €</span>
+              </div>
+              <button class="btn-view-details">View Details</button>
             </div>
+          </div>
+
+          <!-- SF4SPORT -->
+          <div class="project-card" data-project="sf4sport">
+            <div class="project-card-image">
+              <img
+                src="images/sf4sport.png"
+                alt="SF4SPORT Project"
+                onerror="this.style.display='none'; this.parentElement.classList.add('no-image');"
+              />
+            </div>
+            <div class="project-card-content">
+              <div class="project-header">
+                <span class="project-tag">Erasmus+ Sport</span>
+                <h3>SF4SPORT</h3>
+              </div>
+              <p>
+                Supporting integration of AI competencies into sports education
+                and training for digital transformation.
+              </p>
+              <div class="project-tags">
+                <span class="tag">AI Skills</span>
+                <span class="tag">Digital Transformation</span>
+                <span class="tag">1.5M €</span>
+              </div>
+              <button class="btn-view-details">View Details</button>
+            </div>
+          </div>
+
+          <!-- GASCA -->
+          <div class="project-card" data-project="gasca">
+            <div class="project-card-image">
+              <img
+                src="images/gasca.png"
+                alt="GASCA Project"
+                onerror="this.style.display='none'; this.parentElement.classList.add('no-image');"
+              />
+            </div>
+            <div class="project-card-content">
+              <div class="project-header">
+                <span class="project-tag">Erasmus+ VET</span>
+                <h3>GASCA</h3>
+              </div>
+              <p>
+                GDPR Awareness & Compliance in Accommodation Sector: Training
+                for data protection in hospitality.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Data Protection</span>
+                <span class="tag">GDPR</span>
+                <span class="tag">60K €</span>
+              </div>
+              <button class="btn-view-details">View Details</button>
+            </div>
+          </div>
+
+          <!-- DETAM -->
+          <div class="project-card" data-project="detam">
+            <div class="project-card-image">
+              <img
+                src="images/detam.png"
+                alt="DETAM Project"
+                onerror="this.style.display='none'; this.parentElement.classList.add('no-image');"
+              />
+            </div>
+            <div class="project-card-content">
+              <div class="project-header">
+                <span class="project-tag">Erasmus+ VET</span>
+                <h3>DETAM</h3>
+              </div>
+              <p>
+                Digital Entrepreneurship Training with AI Mentorship for young
+                entrepreneurs.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Entrepreneurship</span>
+                <span class="tag">AI Mentorship</span>
+                <span class="tag">280K €</span>
+              </div>
+              <button class="btn-view-details">View Details</button>
+            </div>
+          </div>
+
+          <!-- YOUTHGEN -->
+          <div class="project-card" data-project="youthgen">
+            <div class="project-card-image">
+              <img
+                src="images/youthgen.png"
+                alt="YOUTHGEN Project"
+                onerror="this.style.display='none'; this.parentElement.classList.add('no-image');"
+              />
+            </div>
+            <div class="project-card-content">
+              <div class="project-header">
+                <span class="project-tag">Erasmus+ Youth</span>
+                <h3>YOUTHGEN</h3>
+              </div>
+              <p>
+                Empowering young people to protect their genetic rights in the
+                age of gene editing and digital health.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Genetic Rights</span>
+                <span class="tag">Ethics</span>
+                <span class="tag">400K €</span>
+              </div>
+              <button class="btn-view-details">View Details</button>
+            </div>
+          </div>
+
+          <!-- GreenTennis -->
+          <div class="project-card" data-project="greentennis">
+            <div class="project-card-image">
+              <img
+                src="images/greentennis.png"
+                alt="GreenTennis Project"
+                onerror="this.style.display='none'; this.parentElement.classList.add('no-image');"
+              />
+            </div>
+            <div class="project-card-content">
+              <div class="project-header">
+                <span class="project-tag">Erasmus+ Sport</span>
+                <h3>GreenTennis</h3>
+              </div>
+              <p>
+                "Tennis for a Greener Future" - Environmental sustainability in
+                tennis through carbon footprint reduction.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Environment</span>
+                <span class="tag">Sustainability</span>
+                <span class="tag">400K €</span>
+              </div>
+              <button class="btn-view-details">View Details</button>
+            </div>
+          </div>
+
+          <!-- Score Women -->
+          <div class="project-card" data-project="scorewomen">
+            <div class="project-card-image">
+              <img
+                src="images/scorewomen.png"
+                alt="Score Women Project"
+                onerror="this.style.display='none'; this.parentElement.classList.add('no-image');"
+              />
+            </div>
+            <div class="project-card-content">
+              <div class="project-header">
+                <span class="project-tag">Erasmus+ Sport</span>
+                <h3>Score Women</h3>
+              </div>
+              <p>
+                Enhancing stress management and decision-making skills for
+                female referees in amateur football.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Gender Equality</span>
+                <span class="tag">Football</span>
+                <span class="tag">60K €</span>
+              </div>
+              <button class="btn-view-details">View Details</button>
+            </div>
+          </div>
+
+          <!-- Web Development Projects -->
+          <!-- Mimaria -->
+          <div class="project-card" data-project="mimaria">
+            <div class="project-card-image">
+              <img
+                src="images/mimaria.png"
+                alt="Mimaria Architecture"
+                onerror="this.style.display='none'; this.parentElement.classList.add('no-image');"
+              />
+            </div>
+            <div class="project-card-content">
+              <div class="project-header">
+                <span class="project-tag">Web Development</span>
+                <h3>Mimaria Architecture</h3>
+              </div>
+              <p>
+                Multi-page website for architectural firm with multilingual
+                interface, built with React JS.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React JS</span>
+                <span class="tag">UX/UI</span>
+                <span class="tag">2024</span>
+              </div>
+              <button class="btn-view-details">View Details</button>
+            </div>
+          </div>
+
+          <!-- Star Home -->
+          <div class="project-card" data-project="starhome">
+            <div class="project-card-image">
+              <img
+                src="images/starhome.png"
+                alt="Star Home London"
+                onerror="this.style.display='none'; this.parentElement.classList.add('no-image');"
+              />
+            </div>
+            <div class="project-card-content">
+              <div class="project-header">
+                <span class="project-tag">Web Development</span>
+                <h3>Star Home London</h3>
+              </div>
+              <p>
+                Multi-page website for luxury renovations company with dynamic
+                project gallery.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Commercial</span>
+                <span class="tag">SEO</span>
+                <span class="tag">2024</span>
+              </div>
+              <button class="btn-view-details">View Details</button>
+            </div>
+          </div>
+
+          <!-- Cat Sitter -->
+          <div class="project-card" data-project="catsitter">
+            <div class="project-card-image">
+              <img
+                src="images/catsitter.png"
+                alt="Cat Sitter Berlin"
+                onerror="this.style.display='none'; this.parentElement.classList.add('no-image');"
+              />
+            </div>
+            <div class="project-card-content">
+              <div class="project-header">
+                <span class="project-tag">Web Development</span>
+                <h3>Cat Sitter Berlin</h3>
+              </div>
+              <p>
+                Single-page website for pet-sitting service built with React,
+                Mantine UI, and TypeScript.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React JS</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">2024</span>
+              </div>
+              <button class="btn-view-details">View Details</button>
+            </div>
+          </div>
+
+          <!-- Featured Projects -->
+          <!-- EcoRelief -->
+          <div class="project-card" data-project="ecorelief">
+            <div class="project-card-image">
+              <img
+                src="images/ecorelief.png"
+                alt="EcoRelief Platform"
+                onerror="this.style.display='none'; this.parentElement.classList.add('no-image');"
+              />
+            </div>
+            <div class="project-card-content">
+              <div class="project-header">
+                <span class="project-tag">Featured Project</span>
+                <h3>EcoRelief Platform</h3>
+              </div>
+              <p>
+                AI-powered disaster response and environmental monitoring system
+                for community resilience.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Environment</span>
+                <span class="tag">AI</span>
+                <span class="tag">450K €</span>
+              </div>
+              <button class="btn-view-details">View Details</button>
+            </div>
+          </div>
+
+          <!-- Digital Survey -->
+          <div class="project-card" data-project="digitalsurvey">
+            <div class="project-card-image">
+              <img
+                src="images/digitalsurvey.png"
+                alt="Digital Survey Platform"
+                onerror="this.style.display='none'; this.parentElement.classList.add('no-image');"
+              />
+            </div>
+            <div class="project-card-content">
+              <div class="project-header">
+                <span class="project-tag">Featured Project</span>
+                <h3>Digital Survey Platform</h3>
+              </div>
+              <p>
+                Intelligent survey and analysis tool for social research using
+                natural language processing.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Media</span>
+                <span class="tag">Research</span>
+                <span class="tag">320K €</span>
+              </div>
+              <button class="btn-view-details">View Details</button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Erasmus+ Projects -->
-    <section class="erasmus-projects brown-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Erasmus+ Projects</h2>
-                <p>Collaborative European initiatives combining education, innovation, and social impact</p>
-            </div>
-            
-            <div class="erasmus-intro">
-                <p>Through Erasmus+ programs, we provide non‑formal education and training, support youth exchanges, promote intercultural dialogue, and equip young people with AI, digital, and entrepreneurial skills.</p>
-                
-                <div class="erasmus-stats">
-                    <div class="stat">
-                        <div class="stat-number">12+</div>
-                        <div class="stat-label">Projects Completed</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">8</div>
-                        <div class="stat-label">Partner Countries</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Youth Participants</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="erasmus-grid">
-                <!-- Compath Sport -->
-                <div class="erasmus-card" data-category="erasmus health">
-                    <div class="erasmus-header">
-                        <h3>Compath Sport Project</h3>
-                        <span class="erasmus-type">Erasmus+ Sport</span>
-                    </div>
-                    <p>Promoting mental health and wellbeing through AI-powered sports applications and community engagement programs.</p>
-                    <div class="erasmus-tags">
-                        <span>Health</span>
-                        <span>Sports</span>
-                        <span>Wellbeing</span>
-                    </div>
-                    <a href="#compath-details" class="btn btn-small btn-coral view-details" data-project="compath">Learn More</a>
-                </div>
-                
-                <!-- GASCA Project -->
-                <div class="erasmus-card" data-category="erasmus education">
-                    <div class="erasmus-header">
-                        <h3>GASCA Project</h3>
-                        <span class="erasmus-type">Erasmus+ VET</span>
-                    </div>
-                    <p>Green AI Skills for Circular Economy: Vocational training program for sustainable AI applications in circular economy models.</p>
-                    <div class="erasmus-tags">
-                        <span>Environment</span>
-                        <span>Education</span>
-                        <span>Sustainability</span>
-                    </div>
-                    <a href="#gasca-details" class="btn btn-small btn-brown view-details" data-project="gasca">Learn More</a>
-                </div>
-                
-                <!-- DETAM Project -->
-                <div class="erasmus-card" data-category="erasmus education">
-                    <div class="erasmus-header">
-                        <h3>DETAM Project</h3>
-                        <span class="erasmus-type">Erasmus+ VET</span>
-                    </div>
-                    <p>Digital Entrepreneurship Training with AI Mentorship: Supporting young entrepreneurs in developing digital businesses with AI integration.</p>
-                    <div class="erasmus-tags">
-                        <span>Entrepreneurship</span>
-                        <span>Digital Skills</span>
-                        <span>Mentorship</span>
-                    </div>
-                    <a href="#detam-details" class="btn btn-small btn-teal view-details" data-project="detam">Learn More</a>
-                </div>
-                
-                <!-- YOUTHGEN Project -->
-                <div class="erasmus-card" data-category="erasmus media">
-                    <div class="erasmus-header">
-                        <h3>YOUTHGEN Project</h3>
-                        <span class="erasmus-type">Erasmus+ Youth</span>
-                    </div>
-                    <p>Youth Generation for Ethical AI: Empowering young people to create responsible AI solutions for social media and digital communities.</p>
-                    <div class="erasmus-tags">
-                        <span>Media</span>
-                        <span>Youth</span>
-                        <span>Ethics</span>
-                    </div>
-                    <a href="#youthgen-details" class="btn btn-small btn-coral view-details" data-project="youthgen">Learn More</a>
-                </div>
-                
-                <!-- GreenTennis Project -->
-                <div class="erasmus-card" data-category="erasmus environment">
-                    <div class="erasmus-header">
-                        <h3>GreenTennis Project</h3>
-                        <span class="erasmus-type">Erasmus+ Sport</span>
-                    </div>
-                    <p>Sustainable sports management using AI to reduce environmental impact of sporting events and facilities.</p>
-                    <div class="erasmus-tags">
-                        <span>Environment</span>
-                        <span>Sports</span>
-                        <span>Sustainability</span>
-                    </div>
-                    <a href="#greentennis-details" class="btn btn-small btn-brown view-details" data-project="greentennis">Learn More</a>
-                </div>
-                
-                <!-- Score Women Project -->
-                <div class="erasmus-card" data-category="erasmus health">
-                    <div class="erasmus-header">
-                        <h3>Score Women Project</h3>
-                        <span class="erasmus-type">Erasmus+ Sport</span>
-                    </div>
-                    <p>Empowering women in sports through AI-powered training programs and leadership development initiatives.</p>
-                    <div class="erasmus-tags">
-                        <span>Health</span>
-                        <span>Gender Equality</span>
-                        <span>Sports</span>
-                    </div>
-                    <a href="#scorewomen-details" class="btn btn-small btn-coral view-details" data-project="scorewomen">Learn More</a>
-                </div>
-            </div>
+    <!-- Partnership CTA -->
+    <section class="partnership-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>We Welcome Partnerships</h2>
+          <p>
+            We collaborate with NGOs, educational institutions, researchers, and
+            social enterprises to create meaningful impact.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Become a Partner</a>
         </div>
+      </div>
     </section>
 
-    <!-- Other Projects -->
-    <section class="other-projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>Other Initiatives</h2>
-                <p>Additional projects and collaborations that demonstrate our impact</p>
-            </div>
-            
-            <div class="projects-grid">
-                <div class="project-card" data-category="media">
-                    <div class="project-card-header">
-                        <h3>Mimaria Architecture</h3>
-                        <span class="project-type">Web Development</span>
-                    </div>
-                    <p>Multi-page website design and development for an innovative architecture firm specializing in sustainable design.</p>
-                    <div class="project-status">
-                        <span class="status completed">Completed</span>
-                        <span class="year">2023</span>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="media">
-                    <div class="project-card-header">
-                        <h3>Star Home London</h3>
-                        <span class="project-type">Web Development</span>
-                    </div>
-                    <p>Comprehensive multi-page website for a luxury real estate agency in London, featuring AI-powered property recommendations.</p>
-                    <div class="project-status">
-                        <span class="status completed">Completed</span>
-                        <span class="year">2023</span>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="media">
-                    <div class="project-card-header">
-                        <h3>Cat Sitter Berlin</h3>
-                        <span class="project-type">Web Development</span>
-                    </div>
-                    <p>Single-page website design for a pet care service, including booking system and AI-powered scheduling assistant.</p>
-                    <div class="project-status">
-                        <span class="status completed">Completed</span>
-                        <span class="year">2022</span>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="health">
-                    <div class="project-card-header">
-                        <h3>Health AI Workshop Series</h3>
-                        <span class="project-type">Education</span>
-                    </div>
-                    <p>Monthly workshops training healthcare professionals on AI applications in diagnostics and patient care.</p>
-                    <div class="project-status">
-                        <span class="status ongoing">Ongoing</span>
-                        <span class="year">2024</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Modals -->
+    <!-- Project Modal -->
     <div class="project-modal" id="projectModal">
-        <div class="modal-content">
-            <button class="modal-close" id="modalClose">&times;</button>
-            <div class="modal-body" id="modalBody">
-                <!-- Content will be loaded here by JavaScript -->
-            </div>
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-body" id="modalBody">
+          <!-- Content loaded by JavaScript -->
         </div>
+      </div>
     </div>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Have a Project Idea?</h2>
-            <p>We're always looking for new collaborations and innovative projects at the intersection of AI and social impact.</p>
-            <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-brown">Propose a Project</a>
-                <a href="focus.html" class="btn btn-secondary">Explore Focus Areas</a>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>AIforLives</h3>
-                    <p>Empowering businesses and communities through AI innovation, web development, and global collaboration.</p>
-                    <div class="contact-info">
-                        <div>
-                            <i class="fas fa-phone"></i>
-                            <span>+49 1522 8180645</span>
-                        </div>
-                        <div>
-                            <i class="fas fa-envelope"></i>
-                            <span>aiforlives@gmail.com</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Pages</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="focus.html">Focus Areas</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Get Involved</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Social Media</h3>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    
-                    <h3 style="margin-top: 30px;">Legal</h3>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                    </ul>
-                </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <div class="footer-logo">
+                <span class="logo-icon">AI</span>
+                <span class="logo-text">forLives</span>
+              </div>
+              <p class="footer-description">
+                Empowering communities through AI innovation, web development,
+                and global collaboration for social good.
+              </p>
+              <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
             </div>
-            
-            <div class="copyright">
-                <p>aiforlives.org © 2024. Based in Berlin, Germany.</p>
+            <div class="footer-col">
+              <h4>Pages</h4>
+              <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="focus.html">Focus Areas</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Get Involved</a></li>
+              </ul>
             </div>
+            <div class="footer-col">
+              <h4>Legal</h4>
+              <ul class="footer-links">
+                <li><a href="legal.html">Legal Notice</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Contact</h4>
+              <div class="footer-contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:aiforlives@gmail.com">aiforlives@gmail.com</a>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+49 1522 8180645</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Bochum, Germany</span>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 AIforLives. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="legal.html">Legal</a>
+            <a href="privacy.html">Privacy</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="js/main.js"></script>
     <script src="js/projects.js"></script>
-</body>
+  </body>
 </html>

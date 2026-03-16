@@ -105,6 +105,7 @@ function initAnimatedCounters() {
         if (entry.isIntersecting) {
           const counter = entry.target;
           const target = parseInt(counter.getAttribute("data-count"));
+          const suffix = counter.getAttribute("data-suffix") || "";
           const duration = 2000; // 2 seconds
           const increment = target / (duration / 16); // 60fps
           let current = 0;
@@ -112,10 +113,10 @@ function initAnimatedCounters() {
           const updateCounter = () => {
             current += increment;
             if (current < target) {
-              counter.textContent = Math.ceil(current);
+              counter.textContent = Math.ceil(current) + suffix;
               requestAnimationFrame(updateCounter);
             } else {
-              counter.textContent = target;
+              counter.textContent = target + suffix;
             }
           };
 
@@ -134,65 +135,65 @@ function initAnimatedCounters() {
 
 // Timeline animation for About page
 function initTimelineAnimation() {
-    const timelineItems = document.querySelectorAll('.timeline-item');
-    
-    if (!timelineItems.length) return;
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateX(0)';
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-    
-    timelineItems.forEach((item, index) => {
-        item.style.opacity = '0';
-        item.style.transform = 'translateX(-20px)';
-        item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        item.style.transitionDelay = `${index * 0.2}s`;
-        observer.observe(item);
-    });
+  const timelineItems = document.querySelectorAll(".timeline-item");
+
+  if (!timelineItems.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = "1";
+          entry.target.style.transform = "translateX(0)";
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  timelineItems.forEach((item, index) => {
+    item.style.opacity = "0";
+    item.style.transform = "translateX(-20px)";
+    item.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+    item.style.transitionDelay = `${index * 0.2}s`;
+    observer.observe(item);
+  });
 }
 
 // Run on scroll
 window.addEventListener("scroll", highlightCurrentSection);
 
-
-
 // Update DOMContentLoaded in main.js
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('AI For Lives website loaded');
-    
-    // Initialize components
-    initAnimatedCounters();
-    initTimelineAnimation();
-    
-    // Observe elements for animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animated');
-            }
-        });
-    }, observerOptions);
-    
-    // Observe cards and values
-    document.querySelectorAll('.value-card, .mv-card').forEach(card => {
-        observer.observe(card);
-    });
-    
-    // Set current year in footer
-    const yearSpan = document.getElementById('currentYear');
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
-});
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("AI For Lives website loaded");
 
+  // Initialize components
+  initAnimatedCounters();
+  initTimelineAnimation();
+
+  // Observe elements for animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animated");
+      }
+    });
+  }, observerOptions);
+
+  // Observe cards and values
+  document.querySelectorAll(".value-card, .mv-card").forEach((card) => {
+    observer.observe(card);
+  });
+
+  // Set current year in footer
+  const yearSpan = document.getElementById("currentYear");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});

@@ -15,11 +15,24 @@
   }
 
   .hero {
-    padding: 140px 0 80px;
+    padding: 150px 0 80px;
   }
 
   .hero h1 {
     font-size: 2.8rem;
+  }
+
+  .page-hero {
+    padding: 140px 0 70px;
+  }
+
+  .page-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle,
+  .page-subtitle {
+    font-size: 1.2rem;
   }
 
   .focus-cards {
@@ -58,6 +71,8 @@
   nav li {
     margin: 0 0 20px 0;
   }
+
+  /* Alternative nav (projects, legal, privacy pages) — now uses same structure */
 
   .hero-buttons,
   .cta-buttons {
@@ -104,6 +119,19 @@
     font-size: 1.1rem;
   }
 
+  .page-hero {
+    padding: 120px 0 50px;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle,
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+
   .header-container {
     padding: 15px;
   }
@@ -114,8 +142,13 @@
 
   .hero,
   .focus-areas-preview,
+  .featured-projects,
   .cta-section {
-    padding: 80px 0;
+    padding: 100px 0 60px;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
   }
 
   .focus-card {
