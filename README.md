@@ -1,210 +1,195 @@
 # AIforLives Website
 
-A modern, responsive website for AIforLives - a social entrepreneurial not-for-profit organization focused on mobilizing artificial intelligence for social good.
+A modern, responsive website for AIforLives — a social entrepreneurial not-for-profit organization focused on mobilizing artificial intelligence for social good.
 
 ## 🌐 Live Website
-**Domain:** `aiforlives.org`  
+
+**Domain:** `aiforlives.org`
 **Previous Domain:** `aiforlives.com`
 
 ## 📋 Project Overview
 
-AIforLives is transitioning from a commercial organization to a social entrepreneurial not-for-profit enterprise. The new website reflects this transformation with a focus on:
+AIforLives is a social entrepreneurial not-for-profit enterprise. The website reflects this mission with a focus on:
+
 - Mobilizing AI technologies for social good
 - Supporting young entrepreneurs (particularly women)
 - Implementing Erasmus+ projects
 - Focusing on media, health, and environmental topics at the intersection of AI and social impact
 
-## 🎨 Design Inspiration
-Inspired by [neuroclimate.org](https://neuroclimate.org) - clean, minimalist design with strong visual references.
-
 ## 🏗️ Website Structure
 
-### **5 Main Pages:**
-1. **Home** (`index.html`) - Introduction to AIforLives' mission and focus areas
-2. **About Us** (`about.html`) - Mission, vision, values, and organization story
-3. **Focus Areas** (`focus.html`) - Interactive tab system for Media, Health, and Environment
-4. **Projects** (`projects.html`) - Erasmus+ and web development projects with modal details
-5. **Get Involved** (`contact.html`) - Contact form, engagement options, and FAQ
+### 7 Pages:
+
+1. **Home** (`index.html`) — Mission intro, focus areas, featured projects, partners, and CTA
+2. **About Us** (`about.html`) — Mission, vision, values, animated stat counters
+3. **Focus Areas** (`focus.html`) — Interactive tab system for Media, Health, and Environment
+4. **Projects** (`projects.html`) — Erasmus+ and web development projects with modal details
+5. **Get Involved** (`contact.html`) — Redesigned contact form with info panel, social links, and FAQ
+6. **Legal Notice** (`legal.html`) — Legal/imprint information
+7. **Privacy Policy** (`privacy.html`) — Privacy and data protection policy
+
+## 🎨 Color Palette
+
+"Modern AI" theme using CSS variables throughout:
+
+| Role | Variable | Hex | Color |
+|------|----------|-----|-------|
+| Primary | `--primary-blue` | `#1e293b` | Slate 800 |
+| Primary Light | `--primary-blue-light` | `#334155` | Slate 700 |
+| Secondary | `--teal` | `#7c3aed` | Violet 600 |
+| Secondary Light | `--teal-light` | `#8b5cf6` | Violet 500 |
+| Accent | `--coral` | `#06b6d4` | Cyan 500 |
+| Accent Light | `--coral-light` | `#22d3ee` | Cyan 400 |
+| Warm | `--brown` | `#f59e0b` | Amber 500 |
+| Warm Light | `--brown-light` | `#fde68a` | Amber 200 |
+
+> **Note:** Variable names like `--teal`, `--coral`, `--brown` are retained from the original palette for backward compatibility. They now map to Violet, Cyan, and Amber respectively.
+
+The CSS architecture includes transparent variants (`--teal-10`, `--coral-08`, etc.) and semantic aliases (`--primary`, `--secondary`, `--accent`) for flexibility. All colors outside `:root` use CSS variables — only black/white `rgba()` values remain as raw values.
 
 ## 🎯 Key Features
 
-### **Design Features:**
-- Clean, minimalist aesthetic inspired by neuroclimate.org
-- Color palette: Deep Blue (#1a365d), Teal (#2d9c9c), Coral (#ff6b6b), Warm Brown (#a67c52)
-- Responsive design optimized for all devices
-- Smooth animations and transitions
-- Accessible navigation and content structure
-
-### **Technical Features:**
-- **Pure HTML/CSS/JS** - No framework dependencies
-- **Modular CSS** - Separate stylesheets for each page
-- **Interactive Components**:
-  - Tab system for focus areas
-  - Modal system for project details
-  - Mobile-responsive navigation
-  - Form validation
-  - Smooth scrolling
-- **Performance Optimized**:
-  - Minimal JavaScript
-  - Optimized images (placeholders)
-  - Fast loading times
+- Unified navigation structure across all pages with mobile hamburger menu
+- Unified hero section gradients (navy/violet/cyan family)
+- Featured Projects section on homepage
+- Interactive tab system (Focus Areas) and modal system (Projects)
+- Redesigned contact form with dark info panel + white form layout
+- 4-column grid footer with social icons and violet accent stripe
+- Partners section with icons
+- Animated stat counters on About page
+- Responsive design with breakpoints at 576px, 768px, 992px, and 1200px
+- Custom logo set (header, footer, favicon)
+- Pure HTML/CSS/JS — no framework dependencies
 
 ## 📁 Project Structure
 
 ```
 aiforlives-website/
-├── index.html              # Homepage
-├── about.html              # About Us page
-├── focus.html              # Focus Areas page (Tab system)
-├── projects.html           # Projects page (Modal system)
-├── contact.html            # Get Involved/Contact page
+├── index.html                # Homepage
+├── about.html                # About Us page
+├── focus.html                # Focus Areas page (tab system)
+├── projects.html             # Projects page (modal system)
+├── contact.html              # Get Involved / Contact page
+├── legal.html                # Legal Notice / Imprint
+├── privacy.html              # Privacy Policy
+├── .nojekyll                 # GitHub Pages Jekyll bypass
 ├── css/
-│   ├── style.css          # Main styles (shared across all pages)
-│   ├── about.css          # About page specific styles
-│   ├── focus.css          # Focus areas page styles (Tab system)
-│   ├── projects.css       # Projects page styles (Modal system)
-│   └── contact.css        # Contact page styles
+│   ├── style.css             # Main styles, CSS variables, shared components
+│   ├── responsive.css        # Responsive breakpoints for all pages
+│   ├── about.css             # About page styles
+│   ├── focus.css             # Focus areas tab system styles
+│   ├── projects.css          # Projects page & modal styles
+│   ├── contact.css           # Contact form & info panel styles
+│   └── legal.css             # Legal & privacy page styles
 ├── js/
-│   ├── main.js            # Main navigation and common functionality
-│   ├── focus.js           # Tab system functionality
-│   ├── projects.js        # Modal system for project details
-│   └── contact.js         # Contact form validation
-├── images/                # Image assets (to be added)
-└── README.md              # This file
+│   ├── main.js               # Navigation, mobile menu, smooth scrolling
+│   ├── components.js          # Shared UI components
+│   ├── focus.js              # Tab system with URL hash support
+│   ├── projects.js           # Modal system with full project data
+│   └── contact.js            # Form validation and submission
+├── images/
+│   ├── logo/
+│   │   ├── logo.png          # Full logo
+│   │   ├── logo_small.png    # Compact logo (used in header & footer)
+│   │   ├── favicon.png       # Browser favicon
+│   │   └── ...               # Additional logo variants (dark, mono, solid)
+│   ├── compath.png           # Project images
+│   ├── gasca.png
+│   ├── detam.png
+│   ├── youthgen.png
+│   ├── greentennis.png
+│   ├── scorewomen.png
+│   ├── mimaria.png
+│   ├── starhome.png
+│   ├── catsitter.png
+│   ├── ecorelief.png
+│   ├── digitalsurvey.png
+│   └── sf4sport.png
+└── README.md
 ```
-
-## 🚀 Getting Started
-
-### **Local Development:**
-1. Clone the repository
-2. Open `index.html` in your browser
-3. Use VS Code with Live Server extension for best development experience
-
-### **File Structure Setup:**
-```bash
-mkdir aiforlives-website
-cd aiforlives-website
-mkdir css js images
-```
-
-### **VS Code Recommended Extensions:**
-- **Live Server** - For live preview with auto-refresh
-- **Prettier** - Code formatting
-- **Auto Rename Tag** - HTML tag management
-- **CSS Peek** - CSS navigation
 
 ## 🛠️ Technical Details
 
-### **CSS Architecture:**
-- **CSS Variables** for consistent theming
-- **Mobile-first responsive design**
-- **BEM-inspired naming conventions**
-- **Separate stylesheets** for maintainability
+### CSS Architecture
 
-### **JavaScript Modules:**
-- **main.js** - Header navigation, mobile menu, smooth scrolling
-- **focus.js** - Tab system for focus areas with URL hash support
-- **projects.js** - Modal system for project details with full project data
-- **contact.js** - Form validation and submission handling
+- CSS variables in `:root` for consistent theming (colors, spacing, shadows, transitions)
+- Transparent color variants for overlays and backgrounds
+- Modular stylesheets per page with shared base in `style.css`
+- Responsive rules centralized in `responsive.css`
+- BEM-inspired naming conventions
 
-### **Project Data:**
-All project information is stored in `js/projects.js` including:
-- Erasmus+ Projects (Compath Sport, GASCA, DETAM, YOUTHGEN, GreenTennis, Score Women)
-- Web Development Projects (Mimaria Architecture, Star Home London, Cat Sitter Berlin)
-- Featured AI Projects (EcoRelief, Digital Survey Platform)
+### JavaScript Modules
 
-## 📱 Responsive Design
+- **main.js** — Header navigation, mobile menu toggle, smooth scrolling, scroll animations
+- **components.js** — Shared UI component logic
+- **focus.js** — Tab system for focus areas with URL hash support
+- **projects.js** — Modal system with full project data for all Erasmus+ and web projects
+- **contact.js** — Form validation and submission handling
 
-The website is fully responsive with breakpoints at:
-- **Mobile**: < 576px
-- **Tablet**: 576px - 768px  
-- **Desktop**: 768px - 992px
-- **Large Desktop**: > 992px
+### Project Data
+
+All project information is stored in `js/projects.js`:
+
+- Erasmus+ Projects: Compath Sport, GASCA, DETAM, YOUTHGEN, GreenTennis, Score Women
+- Web Development Projects: Mimaria Architecture, Star Home London, Cat Sitter Berlin
+- Featured AI Projects: EcoRelief, Digital Survey Platform
+
+## 📱 Responsive Breakpoints
+
+| Breakpoint | Target |
+|------------|--------|
+| < 576px | Mobile |
+| 576px – 768px | Tablet |
+| 768px – 992px | Desktop |
+| > 992px | Large Desktop |
+
+## 🚀 Getting Started
+
+1. Clone the repository
+2. Open `index.html` in your browser
+3. Use VS Code with Live Server extension for live preview
 
 ## 🔧 Customization
 
-### **To Add New Projects:**
+### Adding New Projects
+
 1. Add project data to `projectData` object in `js/projects.js`
 2. Create corresponding project card in `projects.html`
-3. Style adjustments in `css/projects.css` if needed
+3. Add project image to `images/`
 
-### **To Update Content:**
-1. Edit HTML files for page content
-2. Update project details in `js/projects.js`
-3. Modify styles in respective CSS files
+### Updating Colors
 
-### **To Add Images:**
-1. Place images in `images/` folder
-2. Update image paths in HTML/CSS
-3. Optimize images for web (recommended: WebP format)
+All colors are defined as CSS variables in `css/style.css` `:root`. Update the variables there and the entire site updates automatically.
 
 ## 🌍 Deployment
 
-### **Recommended Hosting:**
-- **Netlify** (Free for non-profits)
-- **Vercel** (Free tier available)
-- **GitHub Pages** (Simple static hosting)
+Hosted via GitHub Pages (`.nojekyll` file included). Also compatible with Netlify, Vercel, or any static hosting.
 
-### **Deployment Steps:**
-1. **Netlify**:
-   ```bash
-   # Connect Git repository
-   # Deploy with default settings
-   # Configure custom domain: aiforlives.org
-   ```
+### Domain Configuration
 
-2. **Domain Configuration**:
-   - Set up DNS records for `aiforlives.org`
-   - Configure redirect from `aiforlives.com` to `aiforlives.org`
-   - Enable HTTPS/SSL
+- Set up DNS records for `aiforlives.org`
+- Configure redirect from `aiforlives.com` to `aiforlives.org`
+- Enable HTTPS/SSL
 
-3. **Performance Optimization**:
-   - Minify CSS and JavaScript
-   - Optimize images
-   - Enable browser caching
-   - Set up CDN if needed
+## 📞 Contact
 
-## 📊 SEO & Analytics
-
-### **SEO Ready:**
-- Semantic HTML structure
-- Meta tags for each page
-- Open Graph tags for social sharing
-- Sitemap ready structure
-
-### **Analytics Integration:**
-Add to `index.html` head section:
-```html
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'GA_MEASUREMENT_ID');
-</script>
-```
-
-## 📞 Contact & Support
-
-**Organization:** AIforLives  
-**Email:** aiforlives@gmail.com  
-**Phone:** +49 1522 8180645  
-**Location:** Berlin, Germany
+**Organization:** AIforLives
+**Email:** aiforlives@gmail.com
+**Phone:** +49 1522 8180645
+**Location:** Bochum, Germany
 
 ## 📄 License
 
-This project is developed for AIforLives non-profit organization. All rights reserved.
+Developed for AIforLives non-profit organization. All rights reserved.
 
 ## 🙏 Acknowledgments
 
-- Design inspiration from neuroclimate.org
-- Fonts from Google Fonts (Inter, Source Sans Pro)
-- Icons from Font Awesome
-- Color palette inspired by social impact and technology themes
+- Fonts: Google Fonts (Inter, Source Sans Pro)
+- Icons: Font Awesome
+- Color palette: Modern AI theme (Slate, Violet, Cyan, Amber)
 
 ---
 
-**Last Updated:** December 2024  
-**Version:** 1.0.0  
-**Status:** Ready for Deployment
+**Last Updated:** March 2026
+**Version:** 2.0.0
+**Status:** Production
