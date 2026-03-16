@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       link: "#",
     },
-
     sf4sport: {
       title: "SF4SPORT",
       subtitle: "AI Skills for Sports Professionals",
@@ -73,7 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       link: "#",
     },
-
     gasca: {
       title: "GASCA",
       subtitle: "GDPR Awareness & Compliance in Accommodation Sector",
@@ -110,7 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       link: "#",
     },
-
     detam: {
       title: "DETAM",
       subtitle: "Digital Entrepreneurship Training with AI Mentorship",
@@ -147,7 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       link: "#",
     },
-
     youthgen: {
       title: "YOUTHGEN",
       subtitle: "Genetic Rights Protection in the Digital Age",
@@ -183,7 +179,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       link: "#",
     },
-
     greentennis: {
       title: "GreenTennis",
       subtitle: "Tennis for a Greener Future",
@@ -219,7 +214,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       link: "#",
     },
-
     scorewomen: {
       title: "Score Women",
       subtitle: "Empowering Female Football Referees",
@@ -256,7 +250,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       link: "#",
     },
-
     mimaria: {
       title: "Mimaria Architecture",
       subtitle: "Multi-Page Website for Architecture Firm",
@@ -284,7 +277,6 @@ document.addEventListener("DOMContentLoaded", function () {
       technologies: ["React JS", "UX/UI Design", "Multilingual", "SEO"],
       link: "#",
     },
-
     starhome: {
       title: "Star Home London",
       subtitle: "Luxury Renovations Company Website",
@@ -313,7 +305,6 @@ document.addEventListener("DOMContentLoaded", function () {
       technologies: ["Web Design", "UX/UI", "SEO", "Responsive Design"],
       link: "#",
     },
-
     catsitter: {
       title: "Cat Sitter Berlin",
       subtitle: "Pet-Sitting Service Website",
@@ -348,7 +339,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       link: "#",
     },
-
     ecorelief: {
       title: "EcoRelief Platform",
       subtitle: "AI-powered Environmental Crisis Response",
@@ -383,7 +373,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       link: "#",
     },
-
     digitalsurvey: {
       title: "Digital Survey Platform",
       subtitle: "Intelligent Social Research Tool",

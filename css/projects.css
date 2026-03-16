@@ -82,12 +82,53 @@
 /* Card Image - FIXED */
 .project-card-image {
   height: 160px; /* Slightly smaller */
-  background-color: var(--light);
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px; /* Consistent padding */
+  padding: 0px; /* Consistent padding */
   border-bottom: 1px solid var(--light-gray);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.project-card-image.sf4sport {
+  background-image: url("../images/sf4sport.png");
+}
+.project-card-image.compath {
+  background-image: url("../images/compath.png");
+}
+.project-card-image.gasca {
+  background-image: url("../images/gasca.png");
+}
+.project-card-image.youthgen {
+  background-image: url("../images/youthgen.png");
+}
+.project-card-image.greentennis {
+  background-image: url("../images/greentennis.png");
+}
+.project-card-image.detam {
+  background-image: url("../images/detam.png");
+}
+.project-card-image.scorewomen {
+  background-image: url("../images/scorewomen.png");
+}
+.project-card-image.mimaria {
+  background-image: url("../images/mimaria.png");
+}
+.project-card-image.starhome {
+  background-image: url("../images/starhome.png");
+}
+.project-card-image.catsitter {
+  background-image: url("../images/catsitter.png");
+}
+.project-card-image.ecorelief {
+  background-image: url("../images/ecorelief.png");
+}
+.project-card-image.digitalsurvey {
+  background-image: url("../images/digitalsurvey.png");
 }
 
 .project-card-image img {
