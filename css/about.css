@@ -74,7 +74,7 @@
 }
 
 .vision-highlight {
-  background: rgba(255, 107, 107, 0.1);
+  background: var(--coral-10);
   border-left: 4px solid var(--coral);
   padding: 25px;
   margin-top: 30px;
@@ -125,7 +125,7 @@
 .value-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--brown-warm), #f1e8df);
+  background: linear-gradient(135deg, var(--brown-warm), var(--brown-warm-bg));
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -136,18 +136,18 @@
 }
 
 .value-card:nth-child(1) .value-icon {
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-  color: var(--primary-blue);
+  background: linear-gradient(135deg, var(--teal-bg), var(--teal-bg-light));
+  color: var(--teal);
 }
 
 .value-card:nth-child(2) .value-icon {
-  background: linear-gradient(135deg, #fce4ec, #f8bbd9);
+  background: linear-gradient(135deg, var(--coral-bg), var(--coral-bg-light));
   color: var(--coral);
 }
 
 .value-card:nth-child(3) .value-icon {
-  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
-  color: #7b1fa2;
+  background: linear-gradient(135deg, var(--brown-warm), var(--brown-light));
+  color: var(--brown);
 }
 
 .value-card h4 {

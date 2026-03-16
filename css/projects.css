@@ -225,7 +225,7 @@
 }
 
 .btn-view-details:hover {
-  background-color: #268a8a;
+  background-color: var(--teal-dark);
 }
 
 /* Partnership CTA */

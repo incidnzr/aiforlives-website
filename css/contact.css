@@ -73,7 +73,7 @@
 }
 
 .engagement-card:nth-child(3) .engagement-icon {
-  background: linear-gradient(135deg, var(--brown), #bf8f5e);
+  background: linear-gradient(135deg, var(--brown), var(--brown-mid));
 }
 
 .engagement-card h3 {
@@ -152,7 +152,7 @@
 
 /* Left Info Panel */
 .contact-info-panel {
-  background: linear-gradient(160deg, var(--primary-blue) 0%, #1e3a6e 100%);
+  background: linear-gradient(160deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
   color: var(--white);
   padding: 50px 40px;
   display: flex;
@@ -370,12 +370,12 @@
   outline: none;
   border-color: var(--teal);
   background-color: var(--white);
-  box-shadow: 0 0 0 3px rgba(45, 156, 156, 0.1);
+  box-shadow: 0 0 0 3px var(--teal-15);
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #a0aec0;
+  color: var(--placeholder);
 }
 
 .form-group textarea {
@@ -430,8 +430,8 @@
 }
 
 .form-success {
-  background: #e8f5e9;
-  border-left: 4px solid #4caf50;
+  background: var(--success-bg);
+  border-left: 4px solid var(--success);
   padding: 20px;
   border-radius: 0 10px 10px 0;
   margin-top: 24px;
@@ -439,19 +439,19 @@
 }
 
 .form-success i {
-  color: #4caf50;
+  color: var(--success);
   font-size: 2rem;
   margin-bottom: 10px;
   display: block;
 }
 
 .form-success h4 {
-  color: #2e7d32;
+  color: var(--success-dark);
   margin-bottom: 10px;
 }
 
 .form-success p {
-  color: #2e7d32;
+  color: var(--success-dark);
   margin: 0;
   opacity: 0.9;
 }

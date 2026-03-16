@@ -1,18 +1,47 @@
 /* CSS Variables */
 :root {
-  --primary-blue: #1a365d;
-  --primary-blue-light: #2d4a8a;
-  --teal: #2d9c9c;
-  --teal-light: #4abfbf;
-  --coral: #ff6b6b;
-  --coral-light: #ff8e8e;
-  --brown: #a67c52; /* Medium brown */
-  --brown-light: #d7ccc8; /* Light brown */
-  --brown-warm: #e8d8c9; /* Warm light brown */
-  --light-gray: #f7fafc;
+  --primary-blue: #1e293b;
+  --primary-blue-light: #334155;
+  --teal: #7c3aed;
+  --teal-light: #8b5cf6;
+  --teal-dark: #6d28d9;
+  --teal-bg: #ede9fe;
+  --teal-bg-mid: #c4b5fd;
+  --teal-bg-light: #ddd6fe;
+  --coral: #06b6d4;
+  --coral-light: #22d3ee;
+  --coral-dark: #0891b2;
+  --coral-bg: #cffafe;
+  --coral-bg-mid: #67e8f9;
+  --coral-bg-light: #a5f3fc;
+  --brown: #f59e0b;
+  --brown-light: #fde68a;
+  --brown-warm: #fef3c7;
+  --brown-dark: #d97706;
+  --brown-mid: #fbbf24;
+  --brown-warm-bg: #fef9ee;
+  --light-gray: #f8fafc;
+  --light-gray-alt: #f1f5f9;
   --medium-gray: #e2e8f0;
-  --dark-gray: #2d3748;
+  --dark-gray: #1e293b;
+  --footer-dark: #0f172a;
+  --placeholder: #a0aec0;
+  --error: #ef4444;
+  --success: #4caf50;
+  --success-dark: #2e7d32;
+  --success-bg: #e8f5e9;
   --white: #ffffff;
+
+  /* Transparent palette colors */
+  --teal-10: rgba(124, 58, 237, 0.1);
+  --teal-08: rgba(124, 58, 237, 0.08);
+  --teal-15: rgba(124, 58, 237, 0.15);
+  --coral-10: rgba(6, 182, 212, 0.1);
+  --coral-08: rgba(6, 182, 212, 0.08);
+  --brown-10: rgba(245, 158, 11, 0.1);
+  --error-05: rgba(239, 68, 68, 0.05);
+  --error-10: rgba(239, 68, 68, 0.1);
+
   --transition: all 0.3s ease;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
   --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -25,11 +54,11 @@
   --space-xl: 80px;
 
   /* Alias variables (used by projects.css & legal.css) */
-  --primary: #1a365d;
-  --secondary: #2d9c9c;
-  --accent: #ff6b6b;
-  --gray: #718096;
-  --light: #f7fafc;
+  --primary: #1e293b;
+  --secondary: #7c3aed;
+  --accent: #06b6d4;
+  --gray: #64748b;
+  --light: #f8fafc;
 }
 
 /* Reset & Base Styles */
@@ -181,10 +210,10 @@ header {
   color: var(--primary-blue);
 }
 
-.logo-icon {
-  color: var(--teal);
-  margin-right: 8px;
-  font-size: 1.8rem;
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 nav ul {
@@ -264,7 +293,7 @@ nav a.active:after {
 }
 
 .btn-brown:hover {
-  background-color: #8c6b45;
+  background-color: var(--brown-dark);
   color: var(--white);
   transform: translateY(-2px);
 }
@@ -275,7 +304,7 @@ nav a.active:after {
 }
 
 .btn-brown-light:hover {
-  background-color: #c5b7b0;
+  background-color: var(--brown-mid);
   color: var(--dark-gray);
   transform: translateY(-2px);
 }
@@ -445,8 +474,8 @@ nav a.active:after {
   padding: 100px 0;
   background: linear-gradient(
     135deg,
-    rgba(45, 156, 156, 0.1) 0%,
-    rgba(26, 54, 93, 0.1) 100%
+    var(--teal-08) 0%,
+    var(--coral-08) 100%
   );
   text-align: center;
 }
@@ -465,7 +494,7 @@ nav a.active:after {
 
 /* Footer */
 .footer {
-  background: linear-gradient(160deg, #0f2240 0%, #1a365d 50%, #152642 100%);
+  background: linear-gradient(160deg, var(--footer-dark) 0%, var(--primary-blue) 50%, var(--footer-dark) 100%);
   color: var(--white);
   position: relative;
 }
@@ -502,25 +531,10 @@ nav a.active:after {
   margin-bottom: 20px;
 }
 
-.footer-logo .logo-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: var(--teal);
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: var(--white);
-  font-family: "Inter", sans-serif;
-}
-
-.footer-logo .logo-text {
-  font-weight: 700;
-  font-size: 1.4rem;
-  font-family: "Inter", sans-serif;
-  color: var(--white);
+.footer-logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
 
 .footer-description {
@@ -723,7 +737,7 @@ nav a.active:after {
 /* Impact Stats Section */
 .impact-stats {
   padding: 80px 0;
-  background: linear-gradient(135deg, var(--brown-warm) 0%, #f1e8df 100%);
+  background: linear-gradient(135deg, var(--brown-warm) 0%, var(--brown-warm-bg) 100%);
   text-align: center;
 }
 
@@ -799,7 +813,7 @@ nav a.active:after {
 
 .featured-tag {
   display: inline-block;
-  background: rgba(45, 156, 156, 0.1);
+  background: var(--teal-10);
   color: var(--teal);
   padding: 4px 14px;
   border-radius: 20px;
@@ -810,12 +824,12 @@ nav a.active:after {
 }
 
 .featured-card:nth-child(2) .featured-tag {
-  background: rgba(255, 107, 107, 0.1);
+  background: var(--coral-10);
   color: var(--coral);
 }
 
 .featured-card:nth-child(3) .featured-tag {
-  background: rgba(166, 124, 82, 0.1);
+  background: var(--brown-10);
   color: var(--brown);
 }
 
@@ -875,7 +889,7 @@ nav a.active:after {
 /* Update header with brown accent */
 header,
 .header {
-  background-color: var(--white);
+  background-color: var(--light-gray-alt);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   position: fixed;
   width: 100%;
@@ -899,7 +913,7 @@ nav a.active:after {
 }
 
 .cta-buttons .btn:nth-child(1):hover {
-  background-color: #8c6b45;
+  background-color: var(--brown-dark);
 }
 
 .cta-buttons .btn:nth-child(2) {
@@ -920,7 +934,7 @@ nav a.active:after {
 
 /* Additional Utility Classes */
 .brown-section {
-  background: linear-gradient(135deg, var(--brown-warm) 0%, #f1e8df 100%);
+  background: linear-gradient(135deg, var(--brown-warm) 0%, var(--brown-warm-bg) 100%);
   position: relative;
 }
 
@@ -999,7 +1013,7 @@ nav a.active:after {
 }
 
 .btn-brown:hover {
-  background-color: #8c6b45;
+  background-color: var(--brown-dark);
   color: var(--white);
 }
 
@@ -1010,22 +1024,22 @@ nav a.active:after {
 
 /* Error States for Forms */
 .error {
-  border-color: var(--coral) !important;
-  background-color: rgba(255, 107, 107, 0.05) !important;
+  border-color: var(--error) !important;
+  background-color: var(--error-05) !important;
 }
 
 .error:focus {
-  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1) !important;
+  box-shadow: 0 0 0 3px var(--error-10) !important;
 }
 
 .error-message {
-  color: var(--coral) !important;
+  color: var(--error) !important;
   font-size: 0.9rem !important;
   margin-top: 5px !important;
 }
 
 .checkbox-group.error label {
-  color: var(--coral) !important;
+  color: var(--error) !important;
 }
 
 /* Animation for form success */
