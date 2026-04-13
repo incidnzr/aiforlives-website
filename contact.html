@@ -9,6 +9,15 @@
       content="Get involved with AIforLives. Join our community, collaborate on projects, or partner with us to create AI solutions for social good."
     />
 
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://www.aiforlives.com/contact" />
+    <meta property="og:title"       content="Get Involved - AI For Lives" />
+    <meta property="og:description" content="Get involved with AIforLives. Join our community, collaborate on projects, or partner with us to create AI solutions for social good." />
+    <meta property="og:image"       content="https://www.aiforlives.com/images/logo/logo.png" />
+    <meta name="twitter:card"       content="summary_large_image" />
+    <meta name="twitter:site"       content="@aiforlives" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +29,7 @@
     <!-- Icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
     <!-- CSS -->
@@ -53,6 +62,7 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="focus.html">Focus Areas</a></li>
             <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="contact.html" class="active">Get Involved</a></li>
           </ul>
         </nav>
@@ -61,6 +71,7 @@
 
     <!-- Page Hero -->
     <section class="page-hero contact-hero">
+      <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=1600&q=80&auto=format&fit=crop');"></div>
       <div class="container">
         <h1>Get Involved</h1>
         <p class="hero-subtitle">
@@ -260,9 +271,9 @@
             <div class="info-panel-social">
               <span class="info-label">Follow Us</span>
               <div class="social-row">
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/aiforlives/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/aiforlives" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/aiforlives/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
           </div>
@@ -274,7 +285,12 @@
               <p>Fill in the form and we'll get back to you.</p>
             </div>
 
-            <form id="contactForm" class="contact-form">
+            <form id="contactForm" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact" />
+              <!-- Honeypot spam protection -->
+              <div style="display:none;">
+                <label>Don't fill this out: <input name="bot-field" /></label>
+              </div>
               <div class="form-group">
                 <label for="interest">I'm interested in:</label>
                 <select id="interest" name="interest" required>
@@ -605,9 +621,11 @@
           </div>
 
           <div class="newsletter-form">
-            <form id="newsletterForm">
+            <form id="newsletterForm" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="newsletter" />
+              <div style="display:none;"><input name="bot-field" /></div>
               <div class="form-group">
-                <input type="email" placeholder="Your email address" required />
+                <input type="email" name="email" placeholder="Your email address" required />
                 <button type="submit" class="btn btn-coral">Subscribe</button>
               </div>
               <p class="form-note">
@@ -626,17 +644,16 @@
           <div class="footer-grid">
             <div class="footer-brand">
               <div class="footer-logo">
-                <img src="images/logo/logo_mono_dark.png" alt="AIforLives" class="footer-logo-img" />
+                <img src="images/logo/logo_white.png" alt="AIforLives" class="footer-logo-img" />
               </div>
               <p class="footer-description">
                 Empowering communities through AI innovation, web development,
                 and global collaboration for social good.
               </p>
               <div class="footer-social">
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/aiforlives/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/aiforlives/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/aiforlives" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
               </div>
             </div>
             <div class="footer-col">
@@ -646,6 +663,7 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="focus.html">Focus Areas</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Get Involved</a></li>
               </ul>
             </div>

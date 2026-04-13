@@ -1,0 +1,31 @@
+# Netlify Redirects - Clean URLs
+
+# Clean URL rewrites (no redirect, serve the .html file at the clean path)
+/about          /about.html          200
+/focus          /focus.html          200
+/projects       /projects.html       200
+/services       /services.html       200
+/contact        /contact.html        200
+/legal          /legal.html          200
+/privacy        /privacy.html        200
+
+# Legacy URL redirects (old site paths → new pages)
+/erasmus-plus                        /projects.html       301
+/erasmus-plus/*                      /projects.html       301
+/fancy-services                      /services.html       301
+/services                            /services.html       200
+/terms-of-use                        /legal.html          301
+/privacy-policy                      /privacy.html        301
+/get-involved                        /contact.html        301
+/what-we-do                          /focus.html          301
+
+# Specific old Erasmus+ project pages → projects page
+/erasmus-plus/compath-erasmus-plus-sport-project     /projects.html  301
+/erasmus-plus/gasca-erasmus-plus-vet-project         /projects.html  301
+/erasmus-plus/detam-erasmus-plus-vet-project         /projects.html  301
+/erasmus-plus/youthgen-erasmus-plus-youth-project    /projects.html  301
+/erasmus-plus/greentennis-erasmus-plus-sport-project /projects.html  301
+/erasmus-plus/scorewomen-erasmus-plus-sport-project  /projects.html  301
+
+# 404 fallback
+/*              /index.html          404

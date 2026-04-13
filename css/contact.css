@@ -641,11 +641,11 @@
   font-size: 0.9rem;
 }
 
-/* Responsive Styles */
+/* Fix 3: engagement cards — full width at tablet, not capped at 500px */
 @media (max-width: 992px) {
   .engagement-cards {
     grid-template-columns: 1fr;
-    max-width: 500px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
   }

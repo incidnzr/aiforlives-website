@@ -9,6 +9,15 @@
       content="AIforLives is a social entrepreneurial not‑for‑profit organization dedicated to using artificial intelligence as a force for positive social change."
     />
 
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://www.aiforlives.com/" />
+    <meta property="og:title"       content="AI For Lives - Mobilizing AI for Social Good" />
+    <meta property="og:description" content="AIforLives is a social entrepreneurial not‑for‑profit organization dedicated to using artificial intelligence as a force for positive social change." />
+    <meta property="og:image"       content="https://www.aiforlives.com/images/logo/logo.png" />
+    <meta name="twitter:card"       content="summary_large_image" />
+    <meta name="twitter:site"       content="@aiforlives" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +29,7 @@
     <!-- Icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
     <!-- CSS -->
@@ -52,6 +61,7 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="focus.html">Focus Areas</a></li>
             <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Get Involved</a></li>
           </ul>
         </nav>
@@ -60,6 +70,7 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+      <div class="hero-bg-image"></div>
       <div class="container">
         <h1>Mobilizing Artificial Intelligence for Social Good</h1>
         <p>
@@ -75,6 +86,32 @@
           <a href="contact.html" class="btn btn-secondary"
             >Join Our Community</a
           >
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxHi47pwMNfy3Qve-RsNB4Aa1Nxmoe9XFEu64vbUYkCNPxMQ/viewform" target="_blank" rel="noopener" class="btn btn-brown"
+            >Be Erasmus+ Partner</a
+          >
+        </div>
+
+        <!-- Hero Stats Strip -->
+        <div class="hero-stats-strip">
+          <div class="hero-stat">
+            <span class="hero-stat-num">12+</span>
+            <span class="hero-stat-label">Erasmus+ Projects</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">8+</span>
+            <span class="hero-stat-label">EU Countries</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">75+</span>
+            <span class="hero-stat-label">Women Empowered</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">€3M+</span>
+            <span class="hero-stat-label">Project Funding</span>
+          </div>
         </div>
       </div>
     </section>
@@ -156,39 +193,42 @@
 
         <div class="featured-grid">
           <div class="featured-card">
-            <div class="featured-tag">Erasmus+ Sport</div>
-            <h3>Compath Sport</h3>
-            <p>
-              Advancing education and personal development of young
-              athletes-students through AI and sports innovation.
-            </p>
-            <a href="projects.html" class="btn btn-small btn-teal"
-              >Learn More</a
-            >
+            <div class="featured-card-img" style="background-image: url('images/projects/compath.png')"></div>
+            <div class="featured-card-body">
+              <div class="featured-tag">Erasmus+ Sport</div>
+              <h3>Compath Sport</h3>
+              <p>
+                Advancing education and personal development of young
+                athletes-students through AI and sports innovation.
+              </p>
+              <a href="projects.html" class="btn btn-small btn-teal">Learn More</a>
+            </div>
           </div>
 
           <div class="featured-card">
-            <div class="featured-tag">Erasmus+ VET</div>
-            <h3>DETAM</h3>
-            <p>
-              Digital Entrepreneurship Training with AI Mentorship for young
-              entrepreneurs across Europe.
-            </p>
-            <a href="projects.html" class="btn btn-small btn-coral"
-              >Learn More</a
-            >
+            <div class="featured-card-img" style="background-image: url('images/projects/detam.png')"></div>
+            <div class="featured-card-body">
+              <div class="featured-tag">Erasmus+ VET</div>
+              <h3>DETAM</h3>
+              <p>
+                Digital Entrepreneurship Training with AI Mentorship for young
+                entrepreneurs across Europe.
+              </p>
+              <a href="projects.html" class="btn btn-small btn-coral">Learn More</a>
+            </div>
           </div>
 
           <div class="featured-card">
-            <div class="featured-tag">Featured Project</div>
-            <h3>EcoRelief Platform</h3>
-            <p>
-              AI-powered disaster response and environmental monitoring system
-              for community resilience.
-            </p>
-            <a href="projects.html" class="btn btn-small btn-brown"
-              >Learn More</a
-            >
+            <div class="featured-card-img" style="background-image: url('images/projects/ecorelief.png')"></div>
+            <div class="featured-card-body">
+              <div class="featured-tag">Featured Project</div>
+              <h3>EcoRelief Platform</h3>
+              <p>
+                AI-powered disaster response and environmental monitoring system
+                for community resilience.
+              </p>
+              <a href="projects.html" class="btn btn-small btn-brown">Learn More</a>
+            </div>
           </div>
         </div>
       </div>
@@ -248,8 +288,16 @@
             <span>EU Commission</span>
           </div>
           <div class="partner-logo">
+            <i class="fas fa-futbol"></i>
+            <span>Sports Orgs</span>
+          </div>
+          <div class="partner-logo">
+            <i class="fas fa-university"></i>
+            <span>Universities</span>
+          </div>
+          <div class="partner-logo">
             <i class="fas fa-users"></i>
-            <span>Youth Organizations</span>
+            <span>Youth NGOs</span>
           </div>
           <div class="partner-logo">
             <i class="fas fa-microchip"></i>
@@ -266,25 +314,16 @@
           <div class="footer-grid">
             <div class="footer-brand">
               <div class="footer-logo">
-                <img src="images/logo/logo_mono_dark.png" alt="AIforLives" class="footer-logo-img" />
+                <img src="images/logo/logo_white.png" alt="AIforLives" class="footer-logo-img" />
               </div>
               <p class="footer-description">
                 Empowering communities through AI innovation, web development,
                 and global collaboration for social good.
               </p>
               <div class="footer-social">
-                <a href="#" aria-label="Instagram"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#" aria-label="LinkedIn"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" aria-label="Twitter"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a href="#" aria-label="GitHub"
-                  ><i class="fab fa-github"></i
-                ></a>
+                <a href="https://www.instagram.com/aiforlives/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/aiforlives/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/aiforlives" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
               </div>
             </div>
             <div class="footer-col">
@@ -294,6 +333,7 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="focus.html">Focus Areas</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Get Involved</a></li>
               </ul>
             </div>

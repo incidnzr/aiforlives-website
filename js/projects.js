@@ -429,7 +429,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let modalHTML = `
                     <div class="modal-project-header">
                         <div class="modal-project-image">
-                            <img src="images/${project.image}.png" alt="${project.title}" 
+                            <img src="images/projects/${project.image}.png" alt="${project.title}" 
                                  onerror="this.style.display='none'; this.parentElement.classList.add('no-image');">
                         </div>
                         <div class="modal-project-title">

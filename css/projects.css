@@ -80,18 +80,18 @@
 }
 
 /* Card Image - FIXED */
+/* Fix 2: project card image — remove background-attachment:fixed (breaks iOS) */
 .project-card-image {
-  height: 160px; /* Slightly smaller */
+  height: 160px;
   background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px; /* Consistent padding */
+  padding: 0px;
   border-bottom: 1px solid var(--light-gray);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .project-card-image.sf4sport {

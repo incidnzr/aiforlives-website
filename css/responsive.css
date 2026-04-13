@@ -72,19 +72,29 @@
     margin: 0 0 20px 0;
   }
 
-  /* Alternative nav (projects, legal, privacy pages) — now uses same structure */
-
   .hero-buttons,
   .cta-buttons {
     flex-direction: column;
     align-items: center;
   }
 
-  .btn {
+  /* Fix: hero buttons full width but not too narrow */
+  .hero-buttons .btn,
+  .cta-buttons .btn {
     width: 100%;
-    max-width: 300px;
+    max-width: 340px;
     text-align: center;
     margin-bottom: 10px;
+  }
+
+  /* Fix: hero stats strip at mid-size */
+  .hero-stats-strip {
+    gap: 0;
+    padding: 16px 24px;
+  }
+
+  .hero-stat {
+    padding: 8px 16px;
   }
 
   .focus-cards {

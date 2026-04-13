@@ -11,9 +11,10 @@
   background-color: var(--white);
 }
 
+/* Fix 1: mv-grid min too wide for tablets */
 .mv-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
   gap: 40px;
   margin-top: 40px;
 }

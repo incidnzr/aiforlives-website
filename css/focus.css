@@ -16,8 +16,15 @@
   padding: 20px 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   position: sticky;
-  top: 70px;
+  top: 73px; /* matches fixed header height */
   z-index: 998;
+}
+
+@media (max-width: 768px) {
+  .focus-nav {
+    top: 70px;
+    padding: 12px 0;
+  }
 }
 
 .focus-nav-container {
